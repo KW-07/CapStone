@@ -21,12 +21,15 @@ MonoBehaviour:
   element: "\uD654"
   skillRatio: 2.5
   cooldown: 15
+  baseDamage: 0
   damage: 0
   effectDescription: "\uD0DC\uC591\uAC19\uC740 \uBD88\uC774 \uCE90\uB9AD\uD130\uC911\uC2EC\uC73C\uB85C\uBD80\uD130
     \uCEE4\uC9D0, \uC774\uD6C4 \uD3ED\uBC1C"
   description: "\uBC94\uC704: \uBAA8\uB4E0 \uC801\uC5D0\uAC8C 10\uD53C\uD574"
   animDescription: "\uC778\uC220\uC790\uC138"
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 3716124272013779706, guid: 762b0553e26772c46a7254127b35ece0, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
+  hitCount: 0

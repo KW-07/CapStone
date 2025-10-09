@@ -32,7 +32,8 @@ MonoBehaviour:
     \uC801\uC911\uB960 \uAC10\uC18C \uD6A8\uACFC \uBC1C\uC0DD (\uC9C0\uC18D)"
   animDescription: 
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 8154378212072216034, guid: c59a2427fa594f9479f56cdf5b34f3f3, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
   evadeChanceBuff: {fileID: 0}

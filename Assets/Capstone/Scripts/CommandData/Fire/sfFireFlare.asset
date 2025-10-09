@@ -21,12 +21,17 @@ MonoBehaviour:
   element: "\uD654"
   skillRatio: 1.8
   cooldown: 4.5
+  baseDamage: 0
   damage: 0
   effectDescription: "\uD070 \uD654\uD0C4(\u2192\u2192S)\uACFC \uC791\uC740 \uD654\uD0C4(\u2192\u2192S)\uB4E4"
   description: "\uD22C\uC0AC\uCCB4: \uC801\uC911\uD55C \uC801 2.0\uD53C\uD574, \uC801\uC911\uD55C
     \uC801 \uC911\uC2EC \uAE30\uC900 3X3 \uBC94\uC704: 1.4 \uD53C\uD574"
   animDescription: "\uC6D0\uAC70\uB9AC \uACF5\uACA9"
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 4996708588109362073, guid: a17c296e7c4be1b4ea5aa024ecc12d3c, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
+  projectileSpeed: 0
+  hitCount: 0
+  hitDamage: 0

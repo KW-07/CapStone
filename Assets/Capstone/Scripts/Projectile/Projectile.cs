@@ -30,6 +30,8 @@ public class Projectile : MonoBehaviour
 
     protected virtual void LaunchMethod()
     {
+        
+
         rigid.velocity = transform.right * speed;
         Destroy(gameObject, destroyTime);
     }

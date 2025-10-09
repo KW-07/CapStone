@@ -8,6 +8,8 @@ public class SkillSystem : MonoBehaviour
 
     public CommandData command;
 
+    public AudioSource skillEffectSound;
+
     private float cooldown;
     float cooldownTimer;
 
@@ -24,6 +26,8 @@ public class SkillSystem : MonoBehaviour
         {
             cooldown = command.cooldown;
         }
+
+        gameObject.GetComponent<AudioSource>().volume = GetComponent<SoundManager>().soundValue;
 
         cooldownTimer -= Time.deltaTime;
     }
@@ -45,6 +49,9 @@ public class SkillSystem : MonoBehaviour
         if(CanUseCommand())
         {
             command.ActivateSkill(caster, target);
+            AudioClip audio = command.effectSound;
+
+            GetComponent<AudioSource>().PlayOneShot(audio);
         }
         else
         {

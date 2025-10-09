@@ -32,9 +32,10 @@ MonoBehaviour:
     \uD53C\uD574 (\uACC4\uC218: 1.4\uBC30, \uCEE4\uB9E8\uB4DC: \u2192\u2192D)"
   animDescription: 
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 5111653495843871114, guid: 0357e0178be7ec1448981e2fb208e61c, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
   command_sfScorch: {fileID: 0}
   stackCount: 0
   stackDamage: 0

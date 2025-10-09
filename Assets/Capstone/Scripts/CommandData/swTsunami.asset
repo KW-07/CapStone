@@ -33,7 +33,8 @@ MonoBehaviour:
     1.75\uBC30 \uD53C\uD574"
   animDescription: 
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 4541436856548230838, guid: 42d451edf11f9e64199177d7e38eb8b8, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
   hitCount: 0

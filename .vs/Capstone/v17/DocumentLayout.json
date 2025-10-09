@@ -3,24 +3,48 @@
   "WorkspaceRootPath": "C:\\Capstone\\Capstone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\command\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\commanddatascripts\\fire\\sfflamelance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\commanddatascripts\\fire\\sfflamelance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\command\\damageeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\damageeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\command\\skillsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\skillsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\manager\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\manager\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\commanddatascripts\\swbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\commanddatascripts\\swbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\command\\commanddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\commanddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\commanddatascripts\\swdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\commanddatascripts\\swdash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\commanddatascripts\\swcrush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\commanddatascripts\\swcrush.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\command\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\commanddatascripts\\fire\\sfflamelance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\commanddatascripts\\fire\\sfflamelance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\command\\damageeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\damageeffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\buff\u0026debuff\\buffinstance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\attack\\rangeattackdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\attack\\rangeattackdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|c:\\capstone\\capstone\\assets\\capstone\\scripts\\command\\commanddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\commanddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\buff\u0026debuff\\buffmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|C:\\Capstone\\Capstone\\assets\\capstone\\scripts\\command\\skillsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EE98971-DB57-CCE3-EB35-7D60258BAC4D}|Assembly-CSharp.csproj|solutionrelative:assets\\capstone\\scripts\\command\\skillsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\SheeatLoader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,60 +165,64 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 244,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 215,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "swCrush.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swCrush.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swCrush.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swCrush.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swCrush.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:21:29.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "swDash.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swDash.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swDash.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swDash.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swDash.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:19:37.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Manager\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Manager\\SoundManager.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Manager\\SoundManager.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Manager\\SoundManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T15:51:54.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Player\\Player.cs",
               "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Capstone\\Scripts\\Player\\Player.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAkwIUBAABhAAAA",
+              "ViewState": "AQIAABMCAAAAAAAAAAAqwNECAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T20:33:49.832Z"
+              "WhenOpened": "2025-06-30T20:33:49.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CharacterStats.cs",
-              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
-              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
-              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAQwFUAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T14:22:23.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BuffInstance.cs",
-              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
-              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
-              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
-              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T14:19:26.312Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BuffManager.cs",
-              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
-              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
-              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T13:05:10.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "Buff.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\Buff.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\Buff.cs",
@@ -214,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "KnockbackEffect.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\KnockbackEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\KnockbackEffect.cs",
@@ -226,7 +246,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 0,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwCgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T21:17:35.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillSystem.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwB0AAABgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:24:49.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BuffManager.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T13:05:10.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BuffInstance.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\BuffInstance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T14:19:26.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "sfBlazeLight.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\sfBlazeLight.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\sfBlazeLight.cs",
@@ -238,7 +308,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
+              "Title": "CharacterStats.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Stat\\CharacterStats.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAQwFUAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T14:22:23.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CommandManager.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\CommandManager.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\CommandManager.cs",
@@ -251,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "DamageEffect.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\DamageEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\DamageEffect.cs",
@@ -263,19 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Projectile.cs",
-              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
-              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
-              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
-              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Projectile\\Projectile.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAwAcAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T21:17:35.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "RangeAttackData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Attack\\RangeAttackData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Attack\\RangeAttackData.cs",
@@ -287,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "sfFlameLance.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\Fire\\sfFlameLance.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\Fire\\sfFlameLance.cs",
@@ -295,12 +365,11 @@
               "RelativeToolTip": "Assets\\Capstone\\Scripts\\CommandDataScripts\\Fire\\sfFlameLance.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T15:09:17.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T15:09:17.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "sfFlameBlood.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\sfFlameBlood.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\sfFlameBlood.cs",
@@ -312,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "sfIgnition.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\sfIgnition.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\sfIgnition.cs",
@@ -324,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "sfHeatAura.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\sfHeatAura.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\sfHeatAura.cs",
@@ -336,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "sfFlare.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\sfFlare.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\sfFlare.cs",
@@ -348,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "StatModifierBuff.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\StatModifierBuff.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\StatModifierBuff.cs",
@@ -360,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "PlayerStats.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Player\\PlayerStats.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Player\\PlayerStats.cs",
@@ -372,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "F_ShurikenCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_ShurikenCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_ShurikenCommandData.cs",
@@ -384,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "F_FistCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_FistCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_FistCommandData.cs",
@@ -396,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "PosionBuff.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\PosionBuff.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\PosionBuff.cs",
@@ -408,7 +477,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "FollowCaster.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\FollowCaster.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\FollowCaster.cs",
@@ -420,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "PoisonEffect.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\PoisonEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Buff\u0026Debuff\\PoisonEffect.cs",
@@ -432,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "NinNin_CommandSheetLoader.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Manager\\NinNin_CommandSheetLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Manager\\NinNin_CommandSheetLoader.cs",
@@ -444,7 +513,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "F_DanceCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_DanceCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_DanceCommandData.cs",
@@ -456,7 +525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "RangeAttackData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\RangeAttackData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\RangeAttackData.cs",
@@ -468,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "F_FierceCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_FierceCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_FierceCommandData.cs",
@@ -480,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "F_ChaseCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_ChaseCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_ChaseCommandData.cs",
@@ -492,7 +561,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "swSkill.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData\\swSkill.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData\\swSkill.cs",
@@ -504,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "F_TripleCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_TripleCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_TripleCommandData.cs",
@@ -516,7 +585,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "F_KickCommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandData_\\F_KickCommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandData_\\F_KickCommandData.cs",
@@ -528,7 +597,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "UIManager.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\UI\\UIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\UI\\UIManager.cs",
@@ -540,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "SheeatLoader.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\SheeatLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\SheeatLoader.cs",
@@ -548,34 +617,35 @@
               "RelativeToolTip": "Assets\\Capstone\\Scripts\\SheeatLoader.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T17:05:00.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SkillSystem.cs",
-              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
-              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
-              "RelativeToolTip": "Assets\\Capstone\\Scripts\\Command\\SkillSystem.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAIwC4AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T20:24:49.454Z"
             }
           ]
         },
         {
-          "DockedWidth": 156,
+          "DockedWidth": 185,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
+              "Title": "swBullet.cs",
+              "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swBullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swBullet.cs",
+              "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\CommandDataScripts\\swBullet.cs",
+              "RelativeToolTip": "Assets\\Capstone\\Scripts\\CommandDataScripts\\swBullet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T16:37:21.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CommandData.cs",
               "DocumentMoniker": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\CommandData.cs",
               "RelativeDocumentMoniker": "Assets\\Capstone\\Scripts\\Command\\CommandData.cs",
               "ToolTip": "C:\\Capstone\\Capstone\\Assets\\Capstone\\Scripts\\Command\\CommandData.cs",
               "RelativeToolTip": "Assets\\Capstone\\Scripts\\Command\\CommandData.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAADwvxgAAAAcAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvyQAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T19:44:38.326Z",
               "EditorCaption": ""

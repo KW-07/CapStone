@@ -34,6 +34,8 @@ public class CommandData : ScriptableObject
     public float spawnDelay;
     public float destroyTime;
 
+    public AudioClip effectSound;
+
     public virtual void ActivateSkill(GameObject castPoint, GameObject target)
     {
         Debug.Log($"{commandNameKor} 커맨드 사용");

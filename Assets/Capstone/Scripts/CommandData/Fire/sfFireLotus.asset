@@ -21,6 +21,7 @@ MonoBehaviour:
   element: "\uD654"
   skillRatio: 2
   cooldown: 5
+  baseDamage: 0
   damage: 0
   effectDescription: "\uC2DC\uC804\uC2DC \uCE90\uB9AD\uD130 \uB4A4\uC5D0 \uAF43 \uBAA8\uC591\uC758
     \uBD88\uC774 \uD53C\uC5B4\uB0AC\uB2E4 \uC0AC\uB77C\uC9D0, \uD0C0\uACA9 \uC774\uD399\uD2B8
@@ -30,6 +31,7 @@ MonoBehaviour:
     1\uC2A4\uD0DD \uC18C\uBAA8 \uBC94\uC704: \uBAA8\uB4E0 \uC801\uC5D0\uAC8C 2 \uD53C\uD574"
   animDescription: "\uC778\uC220\uC790\uC138"
   castPlayerPosition: 0
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 428165437499943672, guid: 96ff8463aea3263448da6030fc0aeff2, type: 3}
   spawnDelay: 0
   destroyTime: 0
+  effectSound: {fileID: 0}
