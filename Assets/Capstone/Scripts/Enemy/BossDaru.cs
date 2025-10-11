@@ -9,15 +9,15 @@ public class BossDaru : MonoBehaviour, LivingEntity
 
     [Header("HP")]
     public Image currentHealthBar;
-    public float maxHealth = 100f; //시작 체력
-    private float currentHealth;//현재 체력
+    public float maxHealth = 100f;
+    private float currentHealth;
 
     [Header("Range")]
     public float attackRange = 1.5f;    // 공격 가능 거리
     public float detectionRange = 5.0f; // 플레이어 감지 거리
 
     [Header("Move")]
-    public float moveSpeed = 2.0f;  // 이동속도
+    public float moveSpeed = 2.0f;
 
     [Header("PatrolJump")]  // 이동 중 점프 관련 조정
     public float jumpForce = 5.0f;
@@ -151,7 +151,6 @@ public class BossDaru : MonoBehaviour, LivingEntity
         // 데미지 공식 어쩌구... 난 귀찮아 저쩌구...
         if (currentHealthBar != null)
             currentHealthBar.fillAmount = currentHealth / maxHealth;
-
         Debug.Log($"체력바 갱신 fillAmount : {currentHealthBar.fillAmount}");
     }
 
@@ -374,6 +373,7 @@ public class BossDaru : MonoBehaviour, LivingEntity
     private void Die()
     {
         Debug.Log("Monster is Dead!");
+        CancelInvoke();
         rb.velocity = Vector2.zero;  // 움직임 정지
         GetComponent<Collider2D>().enabled = false;  // 충돌 제거
         Destroy(this.gameObject);

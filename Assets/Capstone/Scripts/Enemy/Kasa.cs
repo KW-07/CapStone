@@ -11,18 +11,15 @@ public class Kasa : MonoBehaviour, LivingEntity
 
     [Header("HP")]
     public Image currentHealthBar;
-    public float maxHealth = 100f; //시작 체력
-    private float currentHealth;//현재 체력
-    private bool isdead;
+    public float maxHealth = 100f;
+    private float currentHealth;
 
     [Header("Range")]
     public float attackRange = 1.5f;
     public float detectionRange = 5.0f;
     public float retreatDistance = 1.0f;  // 플레이어 근접 시 회피 거리
 
-    [Header("Itemdrop")]
-    public bool ItemDrop;
-
+    [Header("MoveSpeed")]
     public float moveSpeed = 2.0f;
 
     [Header("Attack")]
@@ -38,6 +35,7 @@ public class Kasa : MonoBehaviour, LivingEntity
     public float retreatCooldown = 3.0f;
     private float nextRetreatTime = 0f;
 
+    [Header("Think")]
     public int nextThinkTime = 3;
     private int nextMove;
 
@@ -144,17 +142,11 @@ public class Kasa : MonoBehaviour, LivingEntity
     public void InitialSet()
     {
         currentHealth = maxHealth;
-        isdead = false;
     }
     public void CheckHp()
     {
         if (currentHealthBar != null)
             currentHealthBar.fillAmount = currentHealth / maxHealth;
-
-        if (currentHealth <= 0)
-        {
-            isdead = true;
-        }
         Debug.Log($"체력바 갱신 fillAmount : {currentHealthBar.fillAmount}");
     }
     private BTNodeState Attack()
@@ -234,10 +226,11 @@ public class Kasa : MonoBehaviour, LivingEntity
     public void OnDamage(float damage)
     {
         currentHealth -= damage;
+        animator.SetTrigger("HIt");
         CheckHp();
         Debug.Log(gameObject.name + " took damage! Current Health: " + currentHealth);
 
-        if (currentHealth <= 0 && isdead)
+        if (currentHealth <= 0)
         {
             animator.SetTrigger("Die");
         }
@@ -246,6 +239,7 @@ public class Kasa : MonoBehaviour, LivingEntity
     private void Die()
     {
         Debug.Log("Monster is Dead!");
+        CancelInvoke();
         rb.velocity = Vector2.zero;  // 움직임 정지
         GetComponent<Collider2D>().enabled = false;  // 충돌 제거
         Destroy(this.gameObject);
