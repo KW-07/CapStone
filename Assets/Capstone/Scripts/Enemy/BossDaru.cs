@@ -9,15 +9,15 @@ public class BossDaru : MonoBehaviour, LivingEntity
 
     [Header("HP")]
     public Image currentHealthBar;
-    public float maxHealth = 100f; //시작 체력
-    private float currentHealth;//현재 체력
+    public float maxHealth = 100f;
+    private float currentHealth;
 
     [Header("Range")]
     public float attackRange = 1.5f;    // 공격 가능 거리
     public float detectionRange = 5.0f; // 플레이어 감지 거리
 
     [Header("Move")]
-    public float moveSpeed = 2.0f;  // 이동속도
+    public float moveSpeed = 2.0f;
 
     [Header("PatrolJump")]  // 이동 중 점프 관련 조정
     public float jumpForce = 5.0f;
@@ -66,13 +66,21 @@ public class BossDaru : MonoBehaviour, LivingEntity
     private BTSelector root;
     private Animator animator;
 
+    private void Awake()
+    {
+        InitialSet();
+    }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        // 안전한 플레이어 참조 획득 (파괴된 경우를 대비)
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = playerObj != null ? playerObj.transform : null;
+
         Invoke("Think", nextMoveTime);
-        InitialSet();
 
         root = new BTSelector();
 
@@ -113,7 +121,9 @@ public class BossDaru : MonoBehaviour, LivingEntity
 
     private void Update()
     {
-        root.Evaluate();
+        // root가 없을 경우 안전하게 스킵
+        if (root != null)
+            root.Evaluate();
     }
     private float Get2DDistance(Vector3 a, Vector3 b) // 아오 z값
     {
@@ -121,8 +131,25 @@ public class BossDaru : MonoBehaviour, LivingEntity
         b.z = 0;
         return Vector3.Distance(a, b);
     }
+
+    // 플레이어 참조가 null이면 재탐색을 시도합니다. 성공하면 true, 실패하면 false 반환.
+    private bool EnsurePlayerTransform()
+    {
+        if (playerTransform != null) return true;
+
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            playerTransform = playerObj.transform;
+            return true;
+        }
+
+        return false;
+    }
+
     private bool IsPlayerDetected()
     {
+        if (!EnsurePlayerTransform()) return false;
         float dist = Get2DDistance(transform.position, playerTransform.position);
         //Debug.Log($"IsPlayerDetected? Distance: {dist} / DetectionRange: {detectionRange} / Result: {dist <= detectionRange}");
         return dist <= detectionRange;
@@ -130,6 +157,7 @@ public class BossDaru : MonoBehaviour, LivingEntity
 
     private bool IsPlayerInRange()
     {
+        if (!EnsurePlayerTransform()) return false;
         float dist = Get2DDistance(transform.position, playerTransform.position);
         //Debug.Log($"IsPlayerInRange? Distance: {dist} / AttackRange: {attackRange} / Result: {dist <= attackRange}");
         return dist <= attackRange;
@@ -151,7 +179,6 @@ public class BossDaru : MonoBehaviour, LivingEntity
         // 데미지 공식 어쩌구... 난 귀찮아 저쩌구...
         if (currentHealthBar != null)
             currentHealthBar.fillAmount = currentHealth / maxHealth;
-
         Debug.Log($"체력바 갱신 fillAmount : {currentHealthBar.fillAmount}");
     }
 
@@ -176,7 +203,7 @@ public class BossDaru : MonoBehaviour, LivingEntity
             if (player.CompareTag("Player"))
             {
                 Debug.Log("Hit Player!");
-                player.GetComponent<Player>().TakeDamage(attack1damage);
+                player.GetComponent<LivingEntity>().OnDamage(attack1damage);
             }
         }
     }
@@ -263,7 +290,7 @@ public class BossDaru : MonoBehaviour, LivingEntity
             if (enemy.CompareTag("Player"))
             {
                 Debug.Log("Hit Player with Slam Attack!");
-                enemy.GetComponent<Player>().TakeDamage(attack2damage);
+                enemy.GetComponent<LivingEntity>().OnDamage (attack2damage);
             }
         }
         // 체력이 40% 이하라면 Attack3 연계
@@ -318,6 +345,9 @@ public class BossDaru : MonoBehaviour, LivingEntity
 
     private BTNodeState Chase()
     {
+        // 플레이어가 없으면 추격 실패
+        if (!EnsurePlayerTransform()) return BTNodeState.Failure;
+
         if (IsPlayerInRange())  // 플레이어가 공격 범위 안에 있다면 추격을 멈춤
         {
             //Debug.Log("Player is in attack range, stopping chase.");
@@ -374,14 +404,18 @@ public class BossDaru : MonoBehaviour, LivingEntity
     private void Die()
     {
         Debug.Log("Monster is Dead!");
+        CancelInvoke();
         rb.velocity = Vector2.zero;  // 움직임 정지
         GetComponent<Collider2D>().enabled = false;  // 충돌 제거
         Destroy(this.gameObject);
     }
     private void LookAtPlayer()
     {
-        if (playerTransform == null) return;
-
+        // 널 체크: 호출부에서 EnsurePlayerTransform을 사용하거나 이 함수 자체에서 처리
+        if (playerTransform == null)
+        {
+            if (!EnsurePlayerTransform()) return;
+        }
         bool lookLeft = playerTransform.position.x < transform.position.x;
         transform.rotation = Quaternion.Euler(0, lookLeft ? 180f : 0f, 0);
     }

@@ -27,7 +27,7 @@ public class SkillSystem : MonoBehaviour
             cooldown = command.cooldown;
         }
 
-        gameObject.GetComponent<AudioSource>().volume = GetComponent<SoundManager>().soundValue;
+       // gameObject.GetComponent<AudioSource>().volume = GetComponent<SoundManager>().soundValue;
 
         cooldownTimer -= Time.deltaTime;
     }

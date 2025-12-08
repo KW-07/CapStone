@@ -51,7 +51,7 @@ public class FireBallProjectile : MonoBehaviour
             Player player = collision.GetComponent<Player>();
             if (player != null)
             {
-                player.TakeDamage(damage);
+                player.OnDamage(damage);
             }
             Destroy(gameObject);
         }

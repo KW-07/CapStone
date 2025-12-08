@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5470752290503761104}
   - component: {fileID: -4642868664303808816}
   - component: {fileID: -8359663705759683024}
+  - component: {fileID: 9032101756146980376}
   m_Layer: 0
   m_Name: sfShot
   m_TagString: Untagged
@@ -197,3 +198,18 @@ MonoBehaviour:
   damage: 0
   speed: 0
   destroyTime: 0
+  homing: 0
+  rotateSpeed: 200
+--- !u!114 &9032101756146980376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883838065876798294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a6754cfa7f04047938aa87469a7ff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50

@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         if (isFirstPlay)
         {
-            UIManager.instance.showDialogue(testDialogue);
+            //UIManager.instance.showDialogue(testDialogue);
             isFirstPlay = false;
         }
     }

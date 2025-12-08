@@ -6,13 +6,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class Player : PlayerStats
+public class Player : MonoBehaviour, LivingEntity
 {
     public static Player instance { get; private set; }
 
     [Header("스탯 UI")]
     public Image currentHealthBar;
+    public float maxHealth = 100f;
+    private float currentHealth;
     public Image currentStaminaBar;
+    public float maxStamina = 100f;
+    private float currentStamina;
 
     [Header("얼굴위치")]
     public Transform maskAttachPoint;
@@ -137,7 +141,7 @@ public class Player : PlayerStats
         pCommandUI.SetActive(false);
         CommandInitialization(pCommand);
 
-        //CheckHp();
+        InitialSet();
     }
 
     private void Update()
@@ -175,6 +179,33 @@ public class Player : PlayerStats
     {
         Move();
         animator.SetFloat("yVelocity", rb.velocity.y);
+    }
+
+    public void InitialSet()
+    {
+        currentHealth = maxHealth;
+    }
+    public void CheckHp()
+    {
+        if (currentHealthBar != null)
+            currentHealthBar.fillAmount = currentHealth / maxHealth;
+        Debug.Log($"플레이어 현재 체력 : {currentHealthBar.fillAmount}");
+    }
+    public void OnDamage(float damage)
+    {
+        Debug.Log($"플레이어가 {damage}의 피해를 입었습니다.");   
+        currentHealth -= damage;
+        animator.SetTrigger("damaged");
+        CheckHp();
+        if (currentHealth <= 0)
+        {
+           Die();
+        }
+    }
+    public void Die()
+    {
+        animator.SetTrigger("playerDie");
+        Destroy(this.gameObject, dieTime);
     }
 
     public Transform GetMaskAttachPoint()   //Mask에서 사용할 얼굴위치 넘겨주는 함수
@@ -478,8 +509,6 @@ public class Player : PlayerStats
                 }
             }
         }
-        if (neareastEnemy != null)
-            neareastEnemy.GetComponent<SpriteRenderer>().color = Color.red;
     }
     #endregion
 
@@ -850,7 +879,6 @@ public class Player : PlayerStats
             return true;
         }
     }
-
     #region Candidate
     private void PCommandCandidate()
     {
@@ -874,31 +902,6 @@ public class Player : PlayerStats
         Array.Resize(ref usableCommandList, j);
     }
     #endregion
-
-    new public void TakeDamage(float amount)
-    {
-        base.TakeDamage(amount);
-        animator.SetTrigger("damaged");
-        CheckStateBar();
-    }
-    public void CheckStateBar() //*HP 갱신
-    {
-        if (currentHealthBar != null)
-            currentHealthBar.fillAmount = currentHealth / maxHealth;
-        /*if (currentStaminaBar != null)
-            currentStaminaBar.fillAmount = currentStamina / maxStamina;*/
-
-        Debug.Log($"체력 갱신 fillAmount : {currentHealthBar.fillAmount}");
-        //Debug.Log($"스테미나 갱신 fillAmount : {currentStaminaBar.fillAmount}");
-    }
-        new public void Die()
-        {
-            base.Die();
-
-            animator.SetTrigger("playerDie");
-
-            Destroy(gameObject, dieTime);
-        }
 }
 
 [System.Serializable]

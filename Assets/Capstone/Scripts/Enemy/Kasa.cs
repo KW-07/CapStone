@@ -11,18 +11,15 @@ public class Kasa : MonoBehaviour, LivingEntity
 
     [Header("HP")]
     public Image currentHealthBar;
-    public float maxHealth = 100f; //시작 체력
-    private float currentHealth;//현재 체력
-    private bool isdead;
+    public float maxHealth = 100f;
+    private float currentHealth;
 
     [Header("Range")]
     public float attackRange = 1.5f;
     public float detectionRange = 5.0f;
     public float retreatDistance = 1.0f;  // 플레이어 근접 시 회피 거리
 
-    [Header("Itemdrop")]
-    public bool ItemDrop;
-
+    [Header("MoveSpeed")]
     public float moveSpeed = 2.0f;
 
     [Header("Attack")]
@@ -38,6 +35,7 @@ public class Kasa : MonoBehaviour, LivingEntity
     public float retreatCooldown = 3.0f;
     private float nextRetreatTime = 0f;
 
+    [Header("Think")]
     public int nextThinkTime = 3;
     private int nextMove;
 
@@ -54,7 +52,11 @@ public class Kasa : MonoBehaviour, LivingEntity
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        // 안전한 플레이어 참조 획득 (파괴된 경우를 대비)
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        playerTransform = playerObj != null ? playerObj.transform : null;
+
         Invoke("Think", nextThinkTime);
 
         root = new BTSelector();
@@ -84,22 +86,21 @@ public class Kasa : MonoBehaviour, LivingEntity
 
     private void Update()
     {
-        root.Evaluate();
+        // root가 없을 경우 안전하게 스킵
+        if (root != null)
+            root.Evaluate();
+
         if (healthBar != null)
         {
             healthBar.transform.rotation = Quaternion.identity;
-
-            /*            Transform barVisual = healthBar.transform.Find("BarVisual");
-                        if (barVisual != null)
-                        {
-                            Vector3 scale = barVisual.localScale;
-                            scale.x = Mathf.Abs(scale.x); // 항상 양수
-                            barVisual.localScale = scale;
-                        }*/
         }
     }
     private void FixedUpdate()
     {
+        // rb가 없을 경우 안전하게 획득 또는 스킵
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+        if (rb == null) return;
+
         Vector2 frontVec = new Vector2(rb.position.x + nextMove * 0.5f, rb.position.y);
         RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("Ground"));
         if (rayHit.collider == null)
@@ -118,20 +119,38 @@ public class Kasa : MonoBehaviour, LivingEntity
         return Vector3.Distance(a, b);
     }
 
+    // 플레이어 참조가 null이면 재탐색을 시도합니다. 성공하면 true, 실패하면 false 반환.
+    private bool EnsurePlayerTransform()
+    {
+        if (playerTransform != null) return true;
+
+        var playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            playerTransform = playerObj.transform;
+            return true;
+        }
+
+        return false;
+    }
+
     private bool IsPlayerDetected()
     {
+        if (!EnsurePlayerTransform()) return false;
         float dist = Get2DDistance(transform.position, playerTransform.position);
         return dist <= detectionRange;
     }
 
     private bool IsPlayerInRange()
     {
+        if (!EnsurePlayerTransform()) return false;
         float dist = Get2DDistance(transform.position, playerTransform.position);
         return dist <= attackRange;
     }
 
     private bool IsPlayerTooClose()
     {
+        if (!EnsurePlayerTransform()) return false;
         float dist = Get2DDistance(transform.position, playerTransform.position);
         return dist <= retreatDistance;
     }
@@ -144,45 +163,53 @@ public class Kasa : MonoBehaviour, LivingEntity
     public void InitialSet()
     {
         currentHealth = maxHealth;
-        isdead = false;
     }
     public void CheckHp()
     {
         if (currentHealthBar != null)
-            currentHealthBar.fillAmount = currentHealth / maxHealth;
-
-        if (currentHealth <= 0)
         {
-            isdead = true;
+            currentHealthBar.fillAmount = currentHealth / maxHealth;
+            Debug.Log($"체력바 갱신 fillAmount : {currentHealthBar.fillAmount}");
         }
-        Debug.Log($"체력바 갱신 fillAmount : {currentHealthBar.fillAmount}");
+        else
+        {
+            Debug.Log($"체력바 갱신 시 currentHealthBar가 null입니다. currentHealth: {currentHealth}");
+        }
     }
     private BTNodeState Attack()
     {
-        LookAtPlayer();
-        animator.SetTrigger("Attack");
+        LookAtPlayer(); // 내부에서 널체크 처리
+        if (animator != null) animator.SetTrigger("Attack");
         SetNextAttackTime();
         return BTNodeState.Success;
     }
 
     private void PerformAttack()
     {
+        if (attackPoint == null) return;
+
         Collider2D[] hitTargets = Physics2D.OverlapBoxAll(attackPoint.position, attackBoxSize, 0f);
         foreach (var target in hitTargets)
         {
+            if (target == null) continue;
             if (target.CompareTag("Player"))
             {
                 Debug.Log("Player hit!");
-                target.GetComponent<Player>().TakeDamage(damage);
+                var living = target.GetComponent<LivingEntity>();
+                if (living != null) living.OnDamage(damage);
             }
         }
     }
     private BTNodeState RetreatJump()
     {
+        // 플레이어가 없으면 회피 실패 처리
+        if (!EnsurePlayerTransform()) return BTNodeState.Failure;
+
         // 플레이어가 내 왼쪽에 있으면 오른쪽(+1), 오른쪽에 있으면 왼쪽(-1)
         float direction = (playerTransform.position.x < transform.position.x) ? 1 : -1;
 
-        rb.velocity = new Vector2(direction * moveSpeed * 1.5f, jumpForce);
+        if (rb != null)
+            rb.velocity = new Vector2(direction * moveSpeed * 1.5f, jumpForce);
 
         nextRetreatTime = Time.time + retreatCooldown;
         return BTNodeState.Success;
@@ -190,6 +217,9 @@ public class Kasa : MonoBehaviour, LivingEntity
 
     private BTNodeState Chase()
     {
+        // 플레이어가 없으면 추격 실패
+        if (!EnsurePlayerTransform()) return BTNodeState.Failure;
+
         if (IsPlayerInRange()) return BTNodeState.Failure;
         LookAtPlayer();
         transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, moveSpeed * Time.deltaTime);
@@ -199,13 +229,13 @@ public class Kasa : MonoBehaviour, LivingEntity
     private BTNodeState Patrol()
     {
         if (IsPlayerDetected()) return BTNodeState.Failure;
-        rb.velocity = new Vector2(nextMove * moveSpeed, rb.velocity.y);
+        if (rb != null) rb.velocity = new Vector2(nextMove * moveSpeed, rb.velocity.y);
         return BTNodeState.Running;
     }
     private void Think()
     {
         nextMove = Random.Range(-1, 2);
-        animator.SetInteger("Think", nextMove);
+        if (animator != null) animator.SetInteger("Think", nextMove);
         Debug.Log(nextMove);
 
         if (nextMove != 0)
@@ -234,25 +264,32 @@ public class Kasa : MonoBehaviour, LivingEntity
     public void OnDamage(float damage)
     {
         currentHealth -= damage;
+        if (animator != null) animator.SetTrigger("Hit");
         CheckHp();
         Debug.Log(gameObject.name + " took damage! Current Health: " + currentHealth);
 
-        if (currentHealth <= 0 && isdead)
+        if (currentHealth <= 0)
         {
-            animator.SetTrigger("Die");
+            if (animator != null) animator.SetTrigger("Die");
         }
     }
 
     private void Die()
     {
         Debug.Log("Monster is Dead!");
-        rb.velocity = Vector2.zero;  // 움직임 정지
-        GetComponent<Collider2D>().enabled = false;  // 충돌 제거
+        CancelInvoke();
+        if (rb != null) rb.velocity = Vector2.zero;  // 움직임 정지
+        var col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;  // 충돌 제거
         Destroy(this.gameObject);
     }
     private void LookAtPlayer()
     {
-        if (playerTransform == null) return;
+        // 널 체크: 호출부에서 EnsurePlayerTransform을 사용하거나 이 함수 자체에서 처리
+        if (playerTransform == null)
+        {
+            if (!EnsurePlayerTransform()) return;
+        }
 
         bool lookLeft = playerTransform.position.x < transform.position.x;
         Vector3 scale = transform.localScale;

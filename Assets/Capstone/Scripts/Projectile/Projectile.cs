@@ -51,4 +51,17 @@ public class Projectile : MonoBehaviour
             rigid.velocity = -transform.right * speed;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == target)
+        {
+            LivingEntity damageable = target.GetComponent<LivingEntity>();
+            if (damageable != null)
+            {
+                damageable.OnDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+    }
 }
+

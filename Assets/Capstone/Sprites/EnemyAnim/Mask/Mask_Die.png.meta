@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19c2d1edf58ba1040b88a43dde67c84d
+guid: 7392e2ca514ba5d40bd7a941110e4a86
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -120,6 +120,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,85 +149,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mask_Run_0
+      name: Mask_Die_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 700
-        width: 750
-        height: 700
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        y: 2100
+        width: 2400
+        height: 2100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c12b07d6d85161d4cbaf4f07f5dc28b6
-      internalID: -225245502
+      spriteID: 481c742675a6a574ead0a5e456ade29a
+      internalID: -827219344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mask_Run_1
+      name: Mask_Die_1
       rect:
         serializedVersion: 2
-        x: 750
-        y: 700
-        width: 750
-        height: 700
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        x: 2400
+        y: 2100
+        width: 2400
+        height: 2100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f68361e29b4100d41946b1f56e6b63fb
-      internalID: 1954238209
+      spriteID: da36193a471ed114399b57397a081784
+      internalID: 1014983717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mask_Run_2
+      name: Mask_Die_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 750
-        height: 700
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        width: 2400
+        height: 2100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7e1ca6795bbda14fa8f00864ff79197
-      internalID: -1903977607
+      spriteID: 99534e9a1b2586d429a75c53238a5c0c
+      internalID: 326963532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mask_Run_3
+      name: Mask_Die_3
       rect:
         serializedVersion: 2
-        x: 750
+        x: 2400
         y: 0
-        width: 750
-        height: 700
-      alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+        width: 2400
+        height: 2100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4954a694b47d7634e8c6f577d56220a1
-      internalID: -42851596
+      spriteID: f7e3feba421c4c44cbd261be513e7c50
+      internalID: 699042174
       vertices: []
       indices: 
       edges: []
@@ -230,10 +243,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mask_Run_0: -225245502
-      Mask_Run_1: 1954238209
-      Mask_Run_2: -1903977607
-      Mask_Run_3: -42851596
+      Mask_Die_0: -827219344
+      Mask_Die_1: 1014983717
+      Mask_Die_2: 326963532
+      Mask_Die_3: 699042174
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
